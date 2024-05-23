@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <style>
+    /* CSS styles */
+    body {
+      background-color: skyblue;
+      background-image: url('./images/3.jpg');
+      background-size: cover;
+      min-height: 100vh;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    img.logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 20px;
+    }
+    /* Navigation styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    .logo {
+      margin-left: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      display: inline;
+      margin-right: 10px;
+    }
+    li a {
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+    }
+    a:visited {
+      color: black;
+    }
+    a:hover {
+      background-color: red;
+    }
+    a:active {
+      background-color: white;
+    }
+    /* Dropdown styles */
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-contents {
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-contents {
+      display: block;
+    }
+    .dropdown-contents a {
+      color: orange;
+      padding: 12px;
+      display: block;
+      text-decoration: none;
+    }
+    .dropdown-contents a:hover {
+      background-color: white;
+    }
+    /* Form styles */
+    .search {
+      margin-right: 20px;
+    }
+    .search input[type="search"] {
+      padding: 8px;
+      border-radius: 20px;
+    }
+    .search button {
+      background-color: blue;
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 20px;
+    }
+    /* Footer styles */
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with logo and navigation -->
+  <header>
+    <div class="logo">
+      <img src="./images/iot 1.png" alt="Logo" class="logo">
+    </div>
+    <ul>
+      <li><a href="./home.html">HOME</a></li>
+      <li><a href="./about.html">ABOUT</a></li>
+      <li><a href="./contact.html">CONTACT</a></li>
+      <li><a href="./service.html">SERVICE</a></li>
+      <!-- Tables dropdown -->
+      <li class="dropdown">
+        <a href="#" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">Tables</a>
+        <div class="dropdown-contents">
+          <a href="./analytics.html">analytics</a>
+          <a href="./antendees.html">antendees</a>
+          <a href="./certificate.html">certificate</a>
+          <a href="./feedback.html">feedback</a>
+          <a href="./instructors.html">instructors</a>
+          <a href="./iotrresources.html">iotrresources</a>
+          <a href="./payment.html">payment</a>
+          <a href="./quiz.html">quiz</a>
+          <a href="./users.html">users</a>
+          <a href="./workshops.html">workshops</a>
+        </div>
+      </li>
+      <!-- Other navigation items -->
+      <li class="dropdown">
+        <a href="#" style="padding: 10px; color: white; background-color: blue; text-decoration: none; margin-right: 15px;">Settings</a>
+        <div class="dropdown-contents">
+          <a href="login.html">Login</a>
+          <a href="registers.html">Register</a>
+          <a href="logout.php">Logout</a>
+        </div>
+      </li>
+    </ul>
+    <!-- Search form -->
+    <div class="search">
+      <form class="d-flex" role="search" action="search.php">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <section style="color: white;">
+    <marquee><h1 style="color: white;">YOU ARE HIGHLY WELCOME TO OUR VIRTUAL INTERNET OF THINGS WORKSHOPS PLATFORM</h1></marquee>
+    <h2 style="color: deepskyblue;"><u>These are the purposes and objectives of the Virtual Internet of Things (IoT) Workshops Platform:</u></h2>
+    <ol type="number" style="background-color: gray; width:400px;">
+      <li><b>Educational Outreach</b></li><br>
+      <li><b>Skill Development</b></li><br>
+      <li><b>Promotion of Innovation</b></li><br>
+      <li><b>Community Building</b></li><br>
+      <li><b>Industry Integration</b></li><br>
+      <li><b>Awareness and Advocacy</b></li><br>
+      <li><b>Entrepreneurship Support</b></li><br>
+      <li><b>Continuing Professional Development (CPD)</b></li><br>
+      <li><b>Global Reach</b></li><br>
+      <li><b>Evaluation and Feedback</b></li><br>
+    </ol><br>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h2>UR CBE BIT &copy; 2024 &reg;, Designed by: LAZIAH</h2>
+  </footer>
+</body>
+</html>
